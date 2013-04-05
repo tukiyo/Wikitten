@@ -1,4 +1,4 @@
-<?php
+ <?php
 // Sanitize html content:
 function e($dirty) {
     return htmlspecialchars($dirty, ENT_QUOTES, 'UTF-8');
@@ -33,6 +33,7 @@ function e($dirty) {
         <script src="static/js/jquery.min.js"></script>
         <script src="static/js/prettify.js"></script>
         <script src="static/js/codemirror.min.js"></script>
+		<script src="static/js/toc2.js"></script>
     </head>
 <body>
     <div id="main">
@@ -46,8 +47,27 @@ function e($dirty) {
                     <div class="span3">
                         <div id="sidebar">
                             <div class="inner">
-                                <h2><span><?php echo e(APP_NAME) ?></span></h2>
-                                <?php include('tree.php') ?>
+								<div id='tabs'>
+								<ul class="nav nav-tabs" id="myTab">
+									<li class="active"><a href="#home" data-toggle="tab">Directory</a></li>
+									<li><a href="#profile" data-toggle="tab">Contents</a></li>
+
+								</ul>
+								</div>
+								<div id="sidebarContents">
+
+									<div id="fileTreeContents" class="tabContent show">
+										<?php include('tree.php') ?>
+									</div>
+
+									<div id="fileContents"  class="tabContent">
+
+										<div id="toc"></div>
+									</div>
+
+								</div>
+                                <!--<h2><span></span></h2>-->
+
                             </div>
                         </div>
                     </div>
@@ -67,6 +87,13 @@ function e($dirty) {
             $('#logo').delay(2000).animate({
                 left: '20px'
             }, 600);
+
+
+			$('#toc').toc({
+				'selectors': 'h1,h2,h3,h4', //elements to use as headings
+				'container': '#content' //element to find all selectors in
+			});
+
         });
     </script>
 </body>
