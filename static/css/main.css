@@ -71,6 +71,7 @@ form {
     text-shadow: 0 1px 0 #FFFFFF;
     border-radius: 4px;
     margin-bottom: 5px;
+
 }
 #sidebar .inner {
     padding: 20px;
@@ -78,7 +79,19 @@ form {
     background-color: #EFF2F4;
     border-radius: 4px;
 }
-#sidebar h2, .breadcrumbs {
+
+.breadcrumbs {
+	line-height: 20px;
+	background: #7B848C;
+	margin: -21px -21px 20px -21px;
+	padding: 0 20px;
+	line-height: 30px;
+	border: 1px solid #666;
+	border-radius: 4px 4px 0 0;
+}
+
+
+#sidebar h2 {
     line-height: 20px;
     background: #7B848C;
     margin: -21px -21px 20px -21px;
@@ -94,6 +107,62 @@ form {
     line-height: 18px;
     padding: 5px 10px;
 }
+#sidebar #tabs {
+	/*height: 28px;*/
+	background: #7B848C;
+	margin: -21px -21px 16px -21px;
+	padding: 8px 20px 0px;
+	line-height: 30px;
+	border: 1px solid #666;
+	border-radius: 4px 4px 0 0;
+	border-bottom: none;
+}
+
+
+/* ------- CSS for Sidebar Tabs ---- */
+#tabs .nav-tabs {
+	padding: 0;
+	border-bottom: 0px solid #ddd;
+	/*margin: 0 -15px 0 -15px;*/
+	margin: 0 auto;
+}
+#tabs .nav-tabs>li {
+	padding: 0;
+}
+#tabs .nav-tabs>li>a {
+	border-radius: 4px 4px 0 0;
+	background: #383939;
+	font-size: 15px;
+	line-height: 18px;
+	padding: 6px 10px 6px;
+	display: block;
+	text-decoration: none;
+	border-color: #eeeeee #eeeeee #dddddd;
+	color: #ddd;
+	text-shadow: none;
+	font-weight: bold;
+}
+#tabs .nav-tabs>li>a:hover {
+	background: #515353;
+}
+#tabs .nav-tabs>li.active>a {
+	background: #EFF2F4;
+	border-bottom-color: transparent;
+	color: #000;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+
+
+
+#sidebarContents .tabContent {
+	display: none;
+}
+#sidebarContents .tabContent.show {
+	display: block;
+}
+
+
 #sidebar ul {
     margin-bottom: 0;
 }
@@ -241,4 +310,39 @@ form {
     margin-left: -13px;
     font-weight: bold;
     color: #333;
+}
+
+
+
+/*  ----- CSS for sidebar table of contents ----- */
+#sidebar #toc ul  {
+	margin-bottom: 0;
+	margin-left: 0;
+	list-style: none;
+	list-style-image: none;
+}
+#sidebar #toc ul {
+	margin-bottom: 0;
+	list-style: none;
+	list-style-image: none;
+}
+#sidebar #toc ul li {
+	display: list-item;
+	padding: 0 0 0;
+	margin-top: 0;
+	list-style: none;
+	list-style-image: none;
+}
+
+#sidebar #toc ul li.toc-h1 {
+	margin-left: 0;
+}
+#sidebar #toc ul li.toc-h2 {
+	margin-left: 10px;
+}
+#sidebar #toc ul li.toc-h3 {
+	margin-left: 20px;
+}
+#sidebar #toc ul li.toc-h4 {
+	margin-left: 30px;
 }

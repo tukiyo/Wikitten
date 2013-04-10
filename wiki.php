@@ -18,7 +18,11 @@ class Wiki
         'page'        => ''
     );
 
-    protected function _getRenderer($extension)
+	/**
+	 * @param $extension
+	 * @return bool|string
+	 */
+	protected function _getRenderer($extension)
     {
         if (!isset($this->_renderers[$extension])) {
             return false;
@@ -158,7 +162,8 @@ class Wiki
      */
     protected function _extractJsonFrontMatter($source)
     {
-        static $front_matter_regex = "/^---\n(.*)\n---\n(.*)/s";
+        //static $front_matter_regex = "/^---\n(.*)\n---\n(.*)/s";
+		static $front_matter_regex = "/^---[\r\n](.*)[\r\n]---[\r\n](.*)/s";
 
         $source    = ltrim($source);
         $meta_data = array();
