@@ -44,3 +44,36 @@
     line-height: 20px;
     font-size: 14px;
 }
+
+
+
+#render table {
+    margin: 1.0em 0;
+    border-top: solid 1px #d9d9d9;
+    border-left: solid 1px #d9d9d9;
+}
+#render thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+#render table th {
+    padding: 8px 10px;
+    font-weight: 900;
+    background-color: white;
+    border-right: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+}
+#render tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+#render table tr:nth-child(odd) {
+    background-color: rgba(0,0,0,0.03);
+}
+#render table td {
+    padding: 8px 10px;
+    border-right: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+}
