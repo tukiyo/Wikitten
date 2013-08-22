@@ -2,17 +2,17 @@
     color: #117ec6;
     text-decoration: none;
 }
-
 #render a:hover,a:focus {
     color: #0f6faf;
     text-decoration: underline;
 }
 
+
+
 #render h1,h2,h3,h4,h5 {
     margin: 1.3em 0 .7em 0;
     font-weight: 600;
 }
-
 #render h1 {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -23,23 +23,19 @@
     line-height: 30px;
     font-size: 24px;
 }
-
 #render h2 {
     border-bottom: solid 1px #d9d9d9;
     line-height: 28px;
     font-size: 22px;
 }
-
 #render h3 {
     line-height: 24px;
     font-size: 18px;
 }
-
 .markdown-content h4 {
     line-height: 22px;
     font-size: 16px;
 }
-
 #render h5 {
     line-height: 20px;
     font-size: 14px;
@@ -76,4 +72,22 @@
     padding: 8px 10px;
     border-right: solid 1px #ccc;
     border-bottom: solid 1px #ccc;
+}
+
+
+#render p {
+    word-wrap: break-word;
+    word-break: break-all;
+    margin: 1.0em 0;
+    font-size: 1.0em;
+    line-height: 1.6em;
+}
+#render ul {
+    line-height: 1.6em;
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+    margin-left: 2.0em;
+}
+#render li {
+    line-height: 20px;
 }
