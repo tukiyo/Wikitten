@@ -20,8 +20,9 @@ function tree($array, $parent, $parts = array(), $step = 0) {
             $selected = (isset($parts[$step]) && $item == $parts[$step]);
 
 	    $t .= '<li class="file'. ($selected ? ' active' : '') .'">';
-            if(preg_match('/(jpg|jpeg|png)$/i',$item)) {
-                $t .= '<a href="'. $parent .'/'. $item . '" target="_blank"><i class="icon icon-picture"></i> '.$item.'</a>';
+            if(preg_match('/\.(jpg|jpeg|png)$/i',$item)) {
+		$imagename = preg_replace('/\.(jpg|jpeg|png)$/i','',$item);
+                $t .= '<a href="'. $parent .'/'. $item . '" target="_blank"><i class="icon icon-picture"></i> '.$imagename.'</a>';
 	    } else {
                 $t .= '<a href="'. $parent .'/'. $item . '" '.$target.'>'.$item.'</a>';
 	    }
