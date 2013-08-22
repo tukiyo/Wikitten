@@ -1,0 +1,10 @@
+span.imagelink {
+    color: #117ec6;
+    text-decoration: none;
+    cursor: pointer;
+}
+span.imagelink:hover,
+span.imagelink:focus {
+    color: #0f6faf;
+    text-decoration: underline;
+}

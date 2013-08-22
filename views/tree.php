@@ -23,7 +23,7 @@ function tree($array, $parent, $parts = array(), $step = 0) {
 	    $url=$parent.'/'.$item;
             if(preg_match('/\.(jpg|jpeg|png)$/i',$item)) {
 		$imagename = preg_replace('/\.(jpg|jpeg|png)$/i','',$item);
-                $t .= '<a href="#" onClick="displayImage(\''.$url.'\');"><i class="icon icon-picture"></i> '.$imagename.'</a>';
+                $t .= '<span class="imagelink" onClick="displayImage(\''.$url.'\');"><i class="icon icon-picture"></i> '.$imagename.'</span>';
 	    } else {
                 $t .= '<a href="'.$url.'">'.$item.'</a>';
 	    }
