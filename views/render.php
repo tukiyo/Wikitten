@@ -1,7 +1,7 @@
 <div class="breadcrumbs">
     <?php if ($html && isset($source)): ?>
         <div class="pull-right">
-            <a href="#" class="btn btn-mini btn-inverse" id="toggle">Toggle source</a>
+            <a href="#" class="btn btn-mini btn-inverse" id="toggle" accesskey="t">(T)oggle source</a>
         </div>
     <?php endif ?>
 
@@ -59,7 +59,7 @@
 
             <?php if (ENABLE_EDITING): ?>
                 <div class="form-actions">
-                    <input type="submit" class="btn btn-inverse" value="Save Changes">
+                    <input type="submit" class="btn btn-inverse" value="(S)ave Changes" accesskey="s">
                 </div>
             <?php endif ?>
         </form>
