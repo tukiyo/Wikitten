@@ -9,6 +9,10 @@ wikittenとは
 ----
 ![](https://github-camo.global.ssl.fastly.net/49c07895d2ee3d967776e244f5af092a2fed17ed/687474703a2f2f77696b697474656e2e76697a75696e612e636f6d2f73637265656e73686f742e706e67)
 
+修正後
+----
+![修正後.PNG](https://qiita-image-store.s3.amazonaws.com/0/25728/52f2a1db-78f0-155e-2187-2f2b8f06ab59.png)
+
 修正内容
 ----
 1. Alt-T でソースをトグル表示、Alt-S で保存。
