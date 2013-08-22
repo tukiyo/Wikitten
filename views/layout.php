@@ -22,6 +22,7 @@ function e($dirty) {
         <link rel="stylesheet" href="static/css/prettify.css">
         <link rel="stylesheet" href="static/css/codemirror.css">
         <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/qiita.css">
 
         <meta name="description" content="<?php echo e($page['description']) ?>">
         <meta name="keywords" content="<?php echo e(join(',', $page['tags'])) ?>">
