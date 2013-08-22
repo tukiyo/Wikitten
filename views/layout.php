@@ -84,9 +84,9 @@ function e($dirty) {
     </div>
     <script>
         $(document).ready(function () {
-            $('#logo').delay(2000).animate({
-                left: '20px'
-            }, 600);
+            //$('#logo').delay(2000).animate({
+            //    left: '20px'
+            //}, 600);
 
 
 			$('#toc').toc({
