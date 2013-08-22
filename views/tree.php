@@ -20,11 +20,12 @@ function tree($array, $parent, $parts = array(), $step = 0) {
             $selected = (isset($parts[$step]) && $item == $parts[$step]);
 
 	    $t .= '<li class="file'. ($selected ? ' active' : '') .'">';
+	    $url=$parent.'/'.$item;
             if(preg_match('/\.(jpg|jpeg|png)$/i',$item)) {
 		$imagename = preg_replace('/\.(jpg|jpeg|png)$/i','',$item);
-                $t .= '<a href="'. $parent .'/'. $item . '" target="_blank"><i class="icon icon-picture"></i> '.$imagename.'</a>';
+                $t .= '<a href="#" onClick="displayImage(\''.$url.'\');"><i class="icon icon-picture"></i> '.$imagename.'</a>';
 	    } else {
-                $t .= '<a href="'. $parent .'/'. $item . '" '.$target.'>'.$item.'</a>';
+                $t .= '<a href="'.$url.'">'.$item.'</a>';
 	    }
 	    $t .= '</li>';
         }
@@ -151,4 +152,10 @@ function tree($array, $parent, $parts = array(), $step = 0) {
 
 
 	});
+
+        function displayImage(url)
+        {
+            var content = $('#content');
+	    content.html('<img src="'+url+'" style="height:'+$(window).height()+'px" />');
+        }
 </script>
