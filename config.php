@@ -15,3 +15,6 @@ define('ENABLE_EDITING', true);
 
 // Enable JSON page data?
 // define('USE_PAGE_METADATA', true);
+
+// Enable auto-focus the search field?
+define('ENABLE_AUTO_FOCUS_SEARCH_FIELD', false);

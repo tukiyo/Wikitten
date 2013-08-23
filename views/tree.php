@@ -64,8 +64,10 @@ function tree($array, $parent, $parts = array(), $step = 0) {
             clearFilterInput = $('#tree-filter-clear-query')
         ;
 
+	<?php if(ENABLE_AUTO_FOCUS_SEARCH_FIELD) : ?>
         // Auto-focus the search field:
         filterInput.focus();
+	<?php endif; ?>
 
         // Cancels a filtering action and puts everything back
         // in its place:
