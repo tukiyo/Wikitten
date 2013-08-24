@@ -158,6 +158,6 @@ function tree($array, $parent, $parts = array(), $step = 0) {
         function displayImage(url)
         {
             var content = $('#content');
-	    content.html('<img src="'+url+'" style="height:'+$(window).height()+'px" />');
+	    content.html('<img src="'+url+'" style="max-height:'+$(window).height()+'px" />');
         }
 </script>
