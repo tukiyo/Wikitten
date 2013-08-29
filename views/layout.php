@@ -52,7 +52,7 @@ function e($dirty) {
 								<div id='tabs'>
 								<ul class="nav nav-tabs" id="myTab">
 									<li class="active"><a href="#home" data-toggle="tab">Directory</a></li>
-									<li><a href="#profile" data-toggle="tab">Contents</a></li>
+									<li><a href="#profile" data-toggle="tab" accesskey="c">(C)ontents</a></li>
 
 								</ul>
 								</div>

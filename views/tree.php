@@ -147,7 +147,7 @@ function tree($array, $parent, $parts = array(), $step = 0) {
 			e.preventDefault();
 			$('#tabs li').toggleClass("active");
 			$('#sidebarContents .tabContent').toggleClass('show');
-
+			$('html, body').animate({ scrollTop: 0 }, 'fast');
 		});
 
 
